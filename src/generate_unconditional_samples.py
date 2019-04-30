@@ -36,6 +36,7 @@ def sample_model(
      while 40 means 40 words are considered at each step. 0 (default) is a
      special setting meaning no restrictions. 40 generally is a good value.
     """
+    print("using model {}".format(model_name))
     enc = encoder.get_encoder(model_name)
     hparams = model.default_hparams()
     with open(os.path.join('models', model_name, 'hparams.json')) as f:
